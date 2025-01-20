@@ -68,7 +68,8 @@ function filterNoPurchaseMember() {
   let notPurchasedMember = members.filter(function (member) {
     return purchasedMemberName.includes(member) === false;
   });
-  console.log(notPurchasedMember);
+  //template literals可以從陣列直接取出資料，不用再寫forEach
+  console.log(`未購買課程的會員有:.....${notPurchasedMember}`);
 }
 
 addPurchaseRecord("Alice", 4);
